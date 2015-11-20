@@ -27,6 +27,10 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         boolean btEnable = Bt.isEnabled();
+        TextView textView = (TextView) findViewById(R.id.helloworld);
+        textView.append("\n");
+        textView.append(btEnable ? "bluetooth enable": "bluetooth disable");
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {

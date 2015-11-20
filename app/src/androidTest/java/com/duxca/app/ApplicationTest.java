@@ -1,4 +1,4 @@
-package com.duxca.usbserial;
+package com.duxca.app;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
